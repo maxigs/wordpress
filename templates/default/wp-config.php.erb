@@ -66,6 +66,11 @@ $table_prefix  = 'wp_';
  */
 define ('WPLANG', '');
 
+<% if node['wordpress']['multisite'] -%>
+/* Multisite */
+define('WP_ALLOW_MULTISITE', true);
+<% end %>
+
 /* That's all, stop editing! Happy blogging. */
 
 /** WordPress absolute path to the Wordpress directory. */
